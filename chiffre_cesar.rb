@@ -1,9 +1,3 @@
-puts "Quel message voulez vous crypter (sans espaces)"
-string = gets.chomp
-puts "Choisisser le nombre de décalage dans votre code"
-code = gets.chomp.to_i
-puts "Votre message codé est : " + cesar(string, code)
-
 def text_to_ascii (text)
   text_ascii = text.chars.map(&:ord)
 
@@ -34,3 +28,9 @@ end
 def cesar(text, nbr)
   ascii_to_text(shift(text_to_ascii(text), nbr))
 end
+
+puts "Quel message voulez vous crypter (sans espaces)"
+string = gets.chomp
+puts "Choisisser le nombre de décalage dans votre code"
+code = gets.chomp.to_i
+puts "Votre message codé est : " + cesar(string, code)
