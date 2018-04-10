@@ -24,8 +24,8 @@ def trader_of_sunday (prices) # On défini la méthode trader_of_sunday pour ré
     day += 1
   end
 
-  #puts "#{[low, high]}"
-  #puts "Vous avez fait un profit de #{prices[high]}$ - #{prices[low]}$ = #{prices[high] - prices[low]}$"
+  puts "#{[low, high]}"
+  puts "Vous avez fait un profit de #{prices[high]}$ - #{prices[low]}$ = #{prices[high] - prices[low]}$"
 end
 
 trader_of_sunday ([17,3,6,9,2,15,8,6,1,10])
